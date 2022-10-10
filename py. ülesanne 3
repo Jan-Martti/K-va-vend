@@ -1,0 +1,32 @@
+#Jan-Martti Olop
+#10.10.22
+#harjutus 03
+import turtle
+
+#akna seadad
+aken = turtle.Screen()
+aken.setup(400,400)
+aken.title("ülesanne 3 - J.M.O")
+
+#kujundi loomine
+k1 = turtle.Turtle()
+for i in range(10):
+    k1.penup()
+    k1.fd(50)
+    k1.pendown()
+    k1.lt(90)
+    k1.fd(50)
+    k1.lt(90)
+    for j in range(3):
+        k1.fd(100)
+        k1.lt(90)
+
+    
+    k1.fd(50)
+    k1.lt(90)
+    k1.penup()
+    k1.fd(50)
+    k1.rt(20)
+
+turtle.exitonclick()
+
