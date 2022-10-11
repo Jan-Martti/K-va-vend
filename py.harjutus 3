@@ -1,0 +1,13 @@
+#J.M.Olop
+#11.10.2022
+#harjutus03
+
+
+
+
+
+#Korralik nimi
+nimi = "Anna"
+nimi = input("sisesta nimi: ")
+puh_nimi = nimi.strip().capitalize()
+print("Tere,", puh_nimi+"!")
