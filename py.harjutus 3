@@ -1,0 +1,59 @@
+#J.M.Olop
+#11.10.2022
+#harjutus03
+
+
+#palindroom 
+def isPalindrome(s):
+    return s == s[::-1]
+ 
+ 
+# Driver code
+s = "emme"
+ans = isPalindrome(s)
+ 
+if ans:
+    print("Yes")
+else:
+    print("No")
+
+
+
+#tundide ajad 
+algus = "8:30" 
+lopp = "14:15"
+
+hh1,mm1 = algus.split(":") #tükeldan teksti
+minutid1 = int(hh1)*60+int(mm1) #teisendan minutiteks
+hh2,mm2 = lopp.split(":")
+minutid2 = int(hh2)*60+int(mm2)
+
+minutid = minutid2-minutid1 #ajavahe
+hh = minutid//60 #täisarvuline jagamine 
+mm = minutid%60 #jääk
+
+print(f"Ajaline vahe on {hh}:{mm}")
+
+
+
+
+
+#email kontroll true/false 
+email = input("Sisesta email kontrollimiseks: ") 
+print("@" in email)
+
+
+
+#vandumine - teksti asendamine 
+v = input("Vannu siia 'Kurat küll!': ")
+print(v.lower().replace("kurat","****"))
+
+
+
+#Korralik nimi
+nimi = "Anna"
+nimi = input("sisesta nimi: ")
+puh_nimi = nimi.strip().capitalize()
+print("Tere,", puh_nimi+"!")
+
+
